@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OxBox</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+  </head>
+  <body>
+    <header class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container is-fluid has-text-weight-light">
+           <div class="level">
+             <div class="level-left">
+               <h1 class="title is-4">OXBOX</h1>
+               <div class="control has-icons-right">
+                 <input class="input is-small" type="text" placeholder="Search...">
+                 <ion-icon class="icon is-right" name="search-outline"></ion-icon>
+               </div>
+               <div class="tabs">
+                 <ul>
+                   <li class="is-active"><a href="#">Home</a></li>
+                   <li><a href="#">Events</a></li>
+                   <li><a href="#">Roles</a></li>
+                 </ul>
+              </div>
+             </div>
+             <div class="level-right">
+               <div class="dropdown is-hoverable is-right">
+                 <div class="dropdown-trigger">
+                     <a>
+                       <ion-icon class="icon" name="add-outline"></ion-icon>
+                       <span class="arrow-down"></span>
+                    </a>
+                 </div>
+                 <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                   <div class="dropdown-content">
+                     <a href="#" class="dropdown-item">New company</a>
+                     <a href="#" class="dropdown-item">New event</a>
+                     <a href="#" class="dropdown-item ">New role</a>
+                   </div>
+                 </div>
+               </div>
+               <div class="dropdown is-hoverable is-right">
+                 <div class="dropdown-trigger">
+                     <a>
+                       <ion-icon class="icon" name="person-outline"></ion-icon>
+                       <span class="arrow-down"></span>
+                     </a>
+                 </div>
+                 <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                   <div class="dropdown-content">
+                     <div class="dropdown-item">
+                       Signed in as <strong>Loic</strong>
+                     </div>
+                     <hr class="dropdown-divider">
+                     <a href="#" class="dropdown-item">Your alerts</a>
+                     <a href="#" class="dropdown-item">Your settings</a>
+                     <hr class="dropdown-divider">
+                     <a href="#" class="dropdown-item">Sign out.</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero is-info info">
+      <div class="hero-body">
+        <div class="container">
+          <h3 class="title">Welcome to Oxbox, the centre for student theatre in Oxford.</h3>
+          <h4 class="subtitle">Discover upcoming shows, find drama and technical roles, and book audition slots.</h4>
+
+
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container stats is-hidden-mobile">
+          <div class="level">
+            <div class="level-item">
+                <p class="title is-5" style="font-weight:400">THIS WEEK</p>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Performances</p>
+                <p class="title">12</p>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Shows</p>
+                <p class="title">6</p>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Venues</p>
+                <p class="title">2</p>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Students</p>
+                <p class="title">61</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container main">
+        <h2 class="title is-4">Events this week</h2>
+        <div class="tile is-ancestor">
+          <div class="tile is-3 is-parent"><div class="tile is-child card event">
+              <a>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/img/merrily-header.png"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <time datetime="2016-1-1" class="has-text-primary">1-2 Oct 2019, 7.30pm-10.30pm</time>
+                <h3 class="title is-5">Merrily We Roll Along</h3>
+                <span class="tag">Oxford Playhouse</span>
+                <span class="tag">Musical</span>
+                <span class="tag">Stephen Sondheim</span>
+                <span class="tag">Goya Productions</span>
+                <span class="tag">Age 8+</span>
+                <span class="tag">Michaelmas 2019</span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-3 is-parent"><div class="tile is-child card event">
+              <a>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/img/troy-header.jpeg"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <time datetime="2016-1-1" class="has-text-primary">1-2 Feb 2020, 7pm-10pm</time>
+                <h3 class="title is-5">Shadows of Troy</h3>
+                <span class="tag">Oxford Playhouse</span>
+                <span class="tag">Drama</span>
+                <span class="tag">Greek</span>
+                <span class="tag">Stupid and Brave Productions</span>
+                <span class="tag">Age 14+</span>
+                <span class="tag">Hilary 2020 </span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-3 is-parent"><div class="tile is-child card event">
+              <a>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/img/chicago-header.jpg"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <time datetime="2016-1-1" class="has-text-primary">1-2 Oct 2019, 7.30pm-10.30pm</time>
+                <h3 class="title is-5">Chicago</h3>
+                <span class="tag">Keble O'Reilly</span>
+                <span class="tag">Musical</span>
+                <span class="tag">Samuel French</span>
+                <span class="tag">Jazz Hands Productions</span>
+                <span class="tag">Age 12+</span>
+                <span class="tag">Michaelmas 2019</span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-3 is-parent"><div class="tile is-child card event">
+              <a>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/img/spring-header.jpg"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <time datetime="2016-1-1" class="has-text-primary">1-2 Feb 2019, 7.30pm-10.30pm</time>
+                <h3 class="title is-5">Spring Awakening</h3>
+                <span class="tag">Oxford Playhouse</span>
+                <span class="tag">Musical</span>
+                <span class="tag">Frank Wedekind</span>
+                <span class="tag">RJ Productions</span>
+                <span class="tag">Age 14+</span>
+                <span class="tag">Hilary 2019</span>
+              </div>
+              </a>
+
+          </div></div>
+          <div class="tile is-1 is-parent"><div class="tile is-child card event">
+            <a>
+            <div class="carousel-right ">
+                <div class="carousel-item">See more</div>
+                <div class="carousel-item"><ion-icon class="icon is-small" name="arrow-forward-outline"></ion-icon></div>
+            </div>
+            </a>
+          </div></div>
+        </div>
+
+        <h2 class="title is-4">Future events</h2>
+        <div class="tile is-ancestor">
+          <div class="tile is-3 is-parent"><div class="tile is-child card event">
+              <a>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/img/spring-header.jpg"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <time datetime="2016-1-1" class="has-text-primary">1-2 Feb 2019, 7.30pm-10.30pm</time>
+                <h3 class="title is-5">Spring Awakening</h3>
+                <span class="tag">Oxford Playhouse</span>
+                <span class="tag">Musical</span>
+                <span class="tag">Frank Wedekind</span>
+                <span class="tag">RJ Productions</span>
+                <span class="tag">Age 14+</span>
+                <span class="tag">Hilary 2019</span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-3 is-parent"><div class="tile is-child card event">
+              <a>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/img/merrily-header.png"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <time datetime="2016-1-1" class="has-text-primary">1-2 Oct 2019, 7.30pm-10.30pm</time>
+                <h3 class="title is-5">Merrily We Roll Along</h3>
+                <span class="tag">Oxford Playhouse</span>
+                <span class="tag">Musical</span>
+                <span class="tag">Stephen Sondheim</span>
+                <span class="tag">Goya Productions</span>
+                <span class="tag">Age 8+</span>
+                <span class="tag">Michaelmas 2019</span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-3 is-parent"><div class="tile is-child card event">
+              <a>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/img/chicago-header.jpg"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <time datetime="2016-1-1" class="has-text-primary">1-2 Oct 2019, 7.30pm-10.30pm</time>
+                <h3 class="title is-5">Chicago</h3>
+                <span class="tag">Keble O'Reilly</span>
+                <span class="tag">Musical</span>
+                <span class="tag">Samuel French</span>
+                <span class="tag">Jazz Hands Productions</span>
+                <span class="tag">Age 12+</span>
+                <span class="tag">Michaelmas 2019</span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-3 is-parent"><div class="tile is-child card event">
+              <a>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="static/img/troy-header.jpeg"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <time datetime="2016-1-1" class="has-text-primary">1-2 Feb 2020, 7pm-10pm</time>
+                <h3 class="title is-5">Shadows of Troy</h3>
+                <span class="tag">Oxford Playhouse</span>
+                <span class="tag">Drama</span>
+                <span class="tag">Greek</span>
+                <span class="tag">Stupid and Brave Productions</span>
+                <span class="tag">Age 14+</span>
+                <span class="tag">Hilary 2020 </span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-1 is-parent"><div class="tile is-child card event">
+            <a>
+            <div class="carousel-right ">
+                <div class="carousel-item">See more</div>
+                <div class="carousel-item"><ion-icon class="icon is-small" name="arrow-forward-outline"></ion-icon></div>
+            </div>
+            </a>
+          </div></div>
+        </div>
+
+        <h2 class="title is-4">Open roles</h2>
+        <div class="tile is-ancestor">
+          <div class="tile is-3 is-parent"><div class="tile is-child card role">
+              <a>
+              <div class="card-content">
+                <span class="has-text-primary">Angels in America</span>
+                <h3 class="title is-5">Hair and Makeup</h3>
+                
+                <span>Matter of Act are looking for Hair and Makeup  for “Angels in America”, 5th Week Hillary, O’Reilly...</span>
+
+                <br />
+                <br />
+                <span class="tag">St Catz</span>
+                <span class="tag">Musical</span>
+                <span class="tag">Costume Department</span>
+                <span class="tag">Matter of Act</span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-3 is-parent"><div class="tile is-child card role">
+              <a>
+              <div class="card-content">
+                <span class="has-text-primary">Little Shop of Horrors</span>
+                <h3 class="title is-5">Set Designer</h3>
+                
+                <span>Jazz Hands Productions are looking for Set Designer and Associate Producer for “Little Shop of Horrors”...</span>
+
+                <br />
+                <br />
+                <span class="tag">Pichette</span>
+                <span class="tag">Jazz Hands Productions</span>
+                <span class="tag">Set Department</span>
+                <span class="tag">Designer</span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-3 is-parent"><div class="tile is-child card role">
+              <a>
+              <div class="card-content">
+                <span class="has-text-primary">Doctor Faustus</span>
+                <h3 class="title is-5">Sound Operator</h3>
+                
+                <span>00Productions are looking for Sound Operators for “Doctor Faustus”, 7th Week Hillary, O’Reilly...</span>
+
+                <br />
+                <br />
+                <span class="tag">Keble O'Reilly</span>
+                <span class="tag">00Productions</span>
+                <span class="tag">Sound Department</span>
+                <span class="tag">No experience</span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-3 is-parent"><div class="tile is-child card role">
+              <a>
+              <div class="card-content">
+                <span class="has-text-primary">Garden Musical</span>
+                <h3 class="title is-5">Lighting Designer</h3>
+                
+                <span>Eglesfield Musical Society are looking for a lightning designer for a garden musical, 4th Week Trinity...</span>
+
+                <br />
+                <br />
+                <span class="tag">Queen's College Gardens</span>
+                <span class="tag">Eglesfield Musical Society</span>
+                <span class="tag">Lighting Department</span>
+                <span class="tag">Designer</span>
+              </div>
+              </a>
+          </div></div>
+          <div class="tile is-1 is-parent"><div class="tile is-child card event">
+            <a>
+            <div class="carousel-right ">
+                <div class="carousel-item">See more</div>
+                <div class="carousel-item"><ion-icon class="icon is-small" name="arrow-forward-outline"></ion-icon></div>
+            </div>
+            </a>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered is-small">
+        <div class="level">
+          <div class="level-left">
+            <a>Oxbox initial wireframe, June 2020.</a>
+          </div>
+          <div class="level-right">
+            <a href="#">About</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Help</a>
+          </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

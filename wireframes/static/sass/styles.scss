@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+// brand colors
+$blue: #557a95;
+$blue-lighter: #7395ae;
+$beige: #b1a296;
+$slate: #5d5c61;
+$slate-lighter: #938e94;
+$slate-lightest: lighten($slate-lighter,30%);
+
+$primary: $blue;
+$info: $beige;
+
+// $link: $blue-lighter;
+// $info: $beige;
+
+// $light: $slate-lighter;
+// $dark: $slate;
+
+$footer-padding: 1rem 3rem 1rem;
+$footer-background-color: $slate-lightest;
+
+@import "bulma-0.8.2/bulma.sass";
+
+html {
+	font-size: 14px;
+}
+
+header .hero-body {
+	padding: 0.5rem 0.5rem;
+}
+
+header .title {
+	margin: 0 !important;
+	padding-top: 0.3rem;
+	padding-right: 2rem;
+}
+
+header .input {
+	background-color: $blue-lighter;
+	border-color: $blue-lighter;
+	width:150px;
+
+	transition: width 0.2s;
+}
+
+header .input:focus{
+	width: 300px;
+	background-color: $white;
+	border-color: #b5b5b5;
+}
+
+header .control .icon {
+	padding: 0.6em !important;
+	height: 1.3em !important;
+	width: 1.3em !important;
+}
+
+header .input::placeholder {
+	color: $white;
+}
+
+header .input:focus::placeholder {
+	color: inherit;
+}
+
+header .tabs {
+	padding-left: 1em;
+	font-size: 0.9rem;
+}
+
+header .tabs li:hover {
+	text-decoration: underline;
+}
+
+header .dropdown-trigger .icon {
+	height: 1rem;
+	width: 1rem;
+	color: $white;
+}
+
+header .dropdown-trigger {
+	padding-left: 1.5rem;
+}
+
+header .dropdown-trigger:hover .icon {
+	color: $grey-light;
+}
+
+
+header .arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid $white;
+
+  margin-left: 0.2rem;
+  position:relative;
+  top: 0.5rem;
+}
+
+header .dropdown-trigger:hover .arrow-down {
+  border-top: 4px solid $grey-light;
+}
+
+header .dropdown-menu {
+	 min-width: 10rem;
+}
+
+header .dropdown-item {
+	 padding: 0.25rem 1rem;
+}
+
+header a.dropdown-item:hover {
+	background-color: $blue-lighter;
+	color: $white;
+}
+
+header .dropdown-divider {
+	margin: 0.2rem 0;
+}
+
+.event .card-content, .role .card-content {
+	padding: 1rem;
+}
+
+.event, .role {
+	transition: box-shadow 0.1s;
+
+}
+
+.event:hover, .role:hover {
+	box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3), 0 0px 0 1px rgba(10, 10, 10, 0.02)
+}
+
+@media screen and (min-width: 769px), print {
+	.tile.is-3 {
+		width:22.9%;
+	}
+}
+
+.carousel-right {
+	top:0;
+	position: absolute;
+
+	height: 100%;
+	width: 100%;
+	background-color: $white-ter;
+	padding: 0.75rem;
+	color: $body-color;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-shrink: 0;
+}
+
+.role a, .event a {
+	color: $body-color;
+}
+
+.main h2 {
+	padding-top: 2rem;
+	color: $grey-dark;
+}
+
+.main {
+	margin-bottom: 6rem;
+	padding: 1rem;
+}
+
+footer a {
+	padding: 0 1rem;
+	color: $grey;
+}
+
+.info h3, .info h4 {
+	font-weight: 400;
+}
+
+.stats {
+	margin: 1rem auto;
+	padding: 1rem;
+	color: $grey;
+	background-color: $grey-lightest;
+}
